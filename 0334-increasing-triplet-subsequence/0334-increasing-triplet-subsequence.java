@@ -14,6 +14,10 @@
       return false;
     }
 }*/
+/*
+t.c. -> o(n)
+s.c. -> o(1)
+*/
 class Solution {
     public boolean increasingTriplet(int[] nums) {
        int max1 = Integer.MAX_VALUE;
