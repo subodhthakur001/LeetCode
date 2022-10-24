@@ -32,7 +32,7 @@ class Solution {
                     q.add(curr.right);
                 }
             }
-            double sum = 0.0;
+            double sum = 0;
             for(Integer s : res){
                 sum = sum +s;
                 avg = sum / res.size();   
