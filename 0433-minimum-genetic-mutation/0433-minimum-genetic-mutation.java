@@ -52,3 +52,23 @@ class Solution {
         return c!=0;
     }
 }
+/*class Solution {
+    public int minMutation(String start, String end, String[] bank) {
+         boolean check = false;
+        for(String s:bank){
+            if(s.equals(end)){
+                check=true;
+                break;
+            }
+        }
+        if(check==false)return -1;
+        int i =0;
+        int count = 0;
+        while(i<start.length()){
+            if(start.charAt(i)!=end.charAt(i))count++;
+            i++;
+        }
+       return count; 
+    }
+}
+*/
