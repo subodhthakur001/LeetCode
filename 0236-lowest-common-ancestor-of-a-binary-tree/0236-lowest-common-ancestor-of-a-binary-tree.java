@@ -9,7 +9,7 @@
  */
 /*
 T.C. -> o(n)
-S.C. -> o(1)
+S.C. -> o(n)
 */
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
