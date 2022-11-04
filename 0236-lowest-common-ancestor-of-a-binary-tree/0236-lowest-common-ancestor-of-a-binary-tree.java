@@ -7,6 +7,10 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+/*
+T.C. -> o(n)
+S.C. -> o(1)
+*/
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root==null || root==p || root== q){
