@@ -13,6 +13,10 @@
  *     }
  * }
  */
+/*
+T.C. -> O(N)
+S.C. -> O(N)
+*/
 class Pair{
     TreeNode node;
     int num;
