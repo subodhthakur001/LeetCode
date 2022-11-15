@@ -13,7 +13,7 @@
  *     }
  * }
  */
-class Solution {
+/*class Solution {
     public int countNodes(TreeNode root) {
         if(root==null)return 0;
         int leftheight = 1;
@@ -34,5 +34,11 @@ class Solution {
             return ans;
         }
         return 1+countNodes(root.left)+countNodes(root.right);
+    }
+}*/
+class Solution {
+    public int countNodes(TreeNode root) {
+        if(root == null) return 0;
+        return countNodes(root.left) + countNodes(root.right) + 1;
     }
 }
