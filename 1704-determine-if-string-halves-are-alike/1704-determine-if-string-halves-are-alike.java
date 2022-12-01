@@ -2,7 +2,7 @@
 T.C. -> O(N/2) + O(N/2)
 S.C. -> O(N) for hashset
 */
-class Solution {
+/*class Solution {
     public boolean halvesAreAlike(String s) {
         int count1 =0;
         int count2=0;
@@ -28,6 +28,24 @@ class Solution {
                 count2++;
             }
         }
-        return count1 ==count2;
+        return count1 == count2;
+    }
+}*/
+
+class Solution {
+    public boolean isVowel(char c){
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'O' || c =='U' || c == 'I';
+    }
+    public boolean halvesAreAlike(String s) {
+        int i =0;
+        int j = s.length()-1;
+        int count =0;
+        while(i<j){
+            if(isVowel(s.charAt(i))) count++;
+            if(isVowel(s.charAt(j))) count--;
+            i++;
+            j--;
+        }
+        return count==0;
     }
 }
