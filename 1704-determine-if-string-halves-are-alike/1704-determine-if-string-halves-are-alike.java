@@ -1,3 +1,7 @@
+/*
+T.C. -> O(N/2) + O(N/2)
+S.C. -> O(N) for hashset
+*/
 class Solution {
     public boolean halvesAreAlike(String s) {
         int count1 =0;
