@@ -12,8 +12,11 @@ class Solution {
         while(!mxhp.isEmpty()){
             char cur=mxhp.remove();
             int l=map.get(cur);
-            while(l-->0)
-            ans.append(cur);
+            while(l>0){
+              ans.append(cur);
+            l--;  
+            }
+            
         }
         return ans.toString();
     }
